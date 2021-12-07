@@ -22,9 +22,11 @@
     "url": "https://github.com/ohakutsu/prh-rule-qiita.git"
   },
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "prh --rules prh-rules/qiita.yml --rules-json"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "prh": "^5.4.4"
   }
 }

@@ -1,0 +1,62 @@
+version: 1
+
+rules:
+  # Qiita
+  - expected: Qiita
+    pattern: "/[Qq][Ii][Ii][Tt][Aa]/g"
+    specs:
+      - from: qiita
+        to: Qiita
+
+  # Qiita Team
+  - expected: Qiita Team
+    pattern: "/[Qq][Ii][Ii][Tt][Aa](:| )[Tt][Ee][Aa][Mm]/g"
+    specs:
+      - from: qiita team
+        to: Qiita Team
+      - from: Qiita:Team
+        to: Qiita Team
+  - expected: Qiita Team
+    patterns:
+      - "/[Qq][Ii][Ii][Tt][Aa][Tt][Ee][Aa][Mm]/g"
+    specs:
+      - from: qiitateam
+        to: Qiita Team
+
+  # Qiita Jobs
+  - expected: Qiita Jobs
+    pattern: "/[Qq][Ii][Ii][Tt][Aa](:| )[Jj][Oo][Bb][Ss]?/g"
+    specs:
+      - from: qiita jobs
+        to: Qiita Jobs
+      - from: Qiita:Jobs
+        to: Qiita Jobs
+      - from: Qiita Job
+        to: Qiita Jobs
+  - expected: Qiita Jobs
+    pattern: "/[Qq][Ii][Ii][Tt][Aa][Jj][Oo][Bb][Ss]?/g"
+    specs:
+      - from: QiitaJobs
+        to: Qiita Jobs
+      - from: qiitajob
+        to: Qiita Jobs
+
+  # Qiita Inc.
+  - expected: Qiita Inc.
+    pattern: "/[Qq][Ii][Ii][Tt][Aa] ?[Ii][Nn][Cc][.]?/g"
+    specs:
+      - from: QiitaInc.
+        to: Qiita Inc.
+      - from: Qiita Inc
+        to: Qiita Inc.
+      - from: qiitainc
+        to: Qiita Inc.
+
+  # Qiita株式会社
+  - expected: Qiita株式会社
+    pattern: "/[Qq][Ii][Ii][Tt][Aa] ?株式会社/g"
+    specs:
+      - from: Qiita 株式会社
+        to: Qiita株式会社
+      - from: qiita株式会社
+        to: Qiita株式会社
