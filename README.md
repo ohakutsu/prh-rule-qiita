@@ -4,7 +4,7 @@
 
 ## Usage
 
-Coming soon...
+There is example of use in https://github.com/ohakutsu/textlint-with-qiita-rule.
 
 ## License
 
