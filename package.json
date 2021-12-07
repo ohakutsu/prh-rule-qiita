@@ -1,0 +1,30 @@
+{
+  "name": "prh-rule-qiita",
+  "version": "0.1.0",
+  "description": "prh rule for Qiita",
+  "keywords": [
+    "Qiita",
+    "prh",
+    "rule"
+  ],
+  "homepage": "https://github.com/ohakutsu/prh-rule-qiita",
+  "bugs": {
+    "url": "https://github.com/ohakutsu/prh-rule-qiita/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ohakutsu",
+    "url": "https://twitter.com/ohakutsu"
+  },
+  "main": "prh-rules/qiita.yml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohakutsu/prh-rule-qiita.git"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
